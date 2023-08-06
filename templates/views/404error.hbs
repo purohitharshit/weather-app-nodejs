@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+   {{>navbar}}
+    <!-- Main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left side div -->
+                    <div class="col-md-11 col-12 main_header_left align-items-center">  <!-- adjust col-md value to align items to center-->
+                        <figure class="errimg">
+                         <img src="images/404.jpg" alt="photo" class="img-fluid" title="hp">
+                        </figure>
+                     <h1>{{errorMsg}}</h1>
+                     <a href="/" target="_blank"><button>Go back</button></a>
+                     
+                    </div>
+                    
+                    <!--right side div-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer code-->
+    {{>footer}}  <!-- use partials for the code which is repeated -->
+</body>
+
+</html>

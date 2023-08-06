@@ -1,0 +1,39 @@
+{{!-- Now there is no need of about.html ...can be deleted --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+   {{>navbar}}
+    <!-- Main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left side div -->
+                    <div class="col-md-6 col-12 main_header_right align-items-center">  <!-- for sliding effect on right-->
+                        <figure>
+                         <img src="images/image7.jpg" alt="photo" class="img-fluid" title="hp" height="1800px" width="300px" style="border-radius: 2rem;">
+                        </figure>
+                     </div>
+                    <!-- right side div -->
+                    <div class="col-md-6 col-12 main_header_left">
+                     <h1>Welcome to TrueWeather App</h1>
+                     <p>TrueWeather has been proven as the most statistically accurate source of weather forecasts and warnings</p>
+                     <a href=" " target="_blank" style="margin: 2rem;"><button>About Us</button></a>
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer code-->
+    {{>footer}}  <!-- use partials for the code which is repeated -->
+</body>
+
+</html>
